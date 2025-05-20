@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Turismo en Brasil</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- Seccion 1 principal -->
+   <header>
+    <div class="div1">  
+        <div class="menu">
+            <nav>
+                <ul>
+                   <li><a href="turismo.html"><span data-i18n="turismo">TURISMO</span></a></li>
+                    <li><a href="galeria.html"><span data-i18n="galeria">GALERÍA</span></a></li>
+                    <li><a href="+brasil.html"><span data-i18n="brasil">+BRASIL</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="images/LOGO.png"  alt=""></a>
+        </div>
+    </div>
+        <div class="texto">
+            <h1 data-i18n="titulo">¡VEN Y DESCUBRE SUS MARAVILLAS!</h1>
+        </div>
+        <div class="idioma">
+          <select>
+              <option value="es">Español</option>
+              <option value="eng">Inglés</option>
+          </select>
+      </div>
+      <div class="contenedor-mensaje">
+        <span class="mensaje-transicion" id="mensaje"></span>
+      </div>
+   </header>
+
+  <!-- Seccion 2 barra gradiente -->     
+   <section> 
+    <div class= "box">
+    </div>
+   </section>
+
+  <!-- Seccion 3 destacados-->
+  <section class="destacados">
+    <div class="texto">
+      <h4 data-i18n="donde_ir">DONDE IR</h4>
+      <h2 data-i18n="elige_destino">Puedes elegir <br> el destino que desees</h2>
+      <p data-i18n="descripcion_brasil">Explora Brasil, donde la magia cobra vida. Desde las vibrantes playas de Copacabana hasta la selva amazónica llena de secretos, Brasil es un país de maravillas sin fin.Descubre su rica cultura, y déjate llevar por la alegría contagiosa de su gente</p>
+      <a href="turismo.html" class="btn"><span data-i18n="ver_mas">Ver más</span></a>
+    </div>
+    <div class="destacado1">
+      <img src="images/RIO DE JANEIRO.png" alt="Río de Janeiro">
+      <div class="contenido">
+          <div>Río de Janeiro</div>
+          <a href="galeria.html" class="boton"><span data-i18n="conoce_mas">Conoce más</span></a>
+      </div>
+    </div>
+    <div class="destacado2">
+      <img src="images/SAO PAULO.jpg" alt="Río de Janeiro">
+      <div class="contenido">
+          <div>São Paulo</div>
+          <a href="galeria.html" class="boton"><span data-i18n="conoce_mas">Conoce más</span></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Seccion 4 galeria-->
+  <div class="banner">
+    <div class="titulo" data-i18n="viaje_visual">UN VIAJE VISUAL</div>
+    <div class="galeria">
+      <img class="imagen1" src="images/FOTO GALERIA 1.jpg" alt="foto galeria 1">
+      <img class="imagen2" src="images/FOTO GALERIA 2.jpg" alt="foto galeria 2">
+      <video autoplay loop controls>
+        <source src="./images/video.mp4.mp4">
+        <source src="./images/video.mp4.mp4">
+        tu navegador no soporta videos
+      </video>
+     <img class="imagen3" src="images/FOTO GALERIA 3.jpg" alt="foto galeria 3">
+     <img class="imagen4" src="images/FOTO GALERIA 4.jpg" alt="foto galeria 4">
+    </div>
+    <div id="modal" class="modal">
+      <img class="modal-contenido" id="imgModal">
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+  </div>
+
+  <!-- Seccion 5 pie de pagina-->
+  <footer class="footer">
+    <div class="icono1">
+      <img src="images/9906449 1.png" alt="Icono izquierdo">
+    </div>
+    <div class="contacto">
+      <h3 data-i18n="contacto">Contacto</h3>
+      <a href="#" data-i18n="email">Email</a>
+    </div>
+    <div class="siguenos">
+      <h3 data-i18n="siguenos">Síguenos</h3>
+      <ul class="redes">
+          <li><a href="#"><span data-i18n="facebook">Facebook</span></a></li>
+          <li><a href="#"><span data-i18n="instagram">Instagram</span></a></li>
+          <li><a href="#"><span data-i18n="tiktok">TikTok</span></a></li>
+          <li><a href="#"><span data-i18n="youtube">YouTube</span></a></li>
+      </ul>
+    </div>
+    <div class="icono2">
+      <img src="images/9906449 1.png" alt="Icono derecho">
+    </div>
+  </footer>
+
+  <script src="js/codigojs.js"></script>
+</body>
+</html>

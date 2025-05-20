@@ -1,0 +1,386 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    background-image: url('../images/FONDO.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 700px;
+    margin: 0; 
+    padding: 0;
+}
+
+
+.div1 .logo {
+  display: flex;
+  margin-left: 130px;
+  margin-top:35px ; 
+  position: fixed; /*prueba*/
+  z-index: 1000;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.logo a:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s
+}
+
+.div1 .menu{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 180px;
+  margin-top: 40px;
+  position: fixed; /*prueba*/
+  z-index: 1000;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Clase que esconde el header hacia arriba */
+.div1.hide {
+  transform: translateY(-100%);
+  opacity: 1s;
+  pointer-events: none;
+}
+
+nav ul {    /* Estilo menú*/
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    border-radius: 20px;
+    border: 2px solid #F5D200; 
+}
+
+nav ul li {
+    margin: 0 35px;
+    padding: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li:nth-child(1) a {
+    color: #DB3C24; /* TURISMO en rojo */
+}
+
+nav ul li:nth-child(2) a {
+    color: #374E91; /* GALERÍA en azul oscuro */
+}
+
+nav ul li:nth-child(3) a {
+    color: #22AD07; /* + BRASIL en verde */
+}
+
+nav ul li:nth-child(1) a:hover{
+  font-size: 17px;
+  transition: font-size 0.3s ease;
+  background-color: #f5e3e3;
+  border-radius: 10px;
+} 
+
+nav ul li:nth-child(2) a:hover{
+  font-size: 17px;
+  transition: font-size 0.3s ease;
+  background-color: #d4dbf0;
+  border-radius: 10px;
+} 
+
+nav ul li:nth-child(3) a:hover{
+  font-size: 17px;
+  transition: font-size 0.3s ease;
+  background-color: #d0edca;
+  border-radius: 10px;
+} 
+
+h1{
+  display: flex;
+  color: #F5D200;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 60px;
+  align-items: center;
+  position: absolute;
+  top: 300px;
+  left: 380px;
+  letter-spacing: 2px;
+}
+
+
+.idioma{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    right: 150px;
+}
+
+/*Seccion 2 barra gradiente*/
+.box {
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right, #DB3C24, #22AD07, #F5D200, #374E91 );    
+}
+
+
+/*Seccion 3 destacados*/
+.banner {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: url('../images/rio-1303951_1280\ 1.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+}
+
+/* Gastronomía */
+.gastronomia-section {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.titulo-gastronomia {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.tarjetas-gastronomia {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-gastronomia {
+  text-align: center;
+ 
+}
+
+.tarjeta-gastronomia img {
+  width: 200px;
+  border-radius: 12px;
+  
+}
+
+.tarjeta-gastronomia p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.tarjeta-gastronomia:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  box-shadow: 2px 2px 10px #303031;
+  border-radius: 12px;
+}
+
+/*Eventos */
+.eventos-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.titulo-eventos {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.tarjetas-eventos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-evento {
+  text-align: center;
+}
+
+.tarjeta-evento img {
+  width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tarjeta-evento p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.tarjeta-evento:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  box-shadow: 2px 2px 10px #303031;
+  border-radius: 12px;
+}
+
+.tarjeta-gastronomia img,
+.tarjeta-evento img {
+  width: 240px;
+  height: 180px; 
+  object-fit: cover; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*Seccion 5 pie de pagina*/
+.footer {
+  background-color: #334585;
+  padding: 20px 0;
+}
+
+.footer {
+  background-color: #374E91;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+
+.contacto a{
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 2px;
+  font-size: 14px;
+}
+
+.contacto a:hover{
+  font-size: 15px;
+  transition: font-size 0.3s ease;
+}
+
+.redes {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 14px;
+}
+
+.redes li {
+    display:flex; 
+    margin-left: 2px; 
+}
+
+.redes a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.redes a:hover{
+  font-size: 15px;
+  transition: font-size 0.3s ease;
+}
+
+.icono1{
+  margin-top: 30px;
+}
+
+.icono2{
+  margin-top: 30px;
+}
+
+/*Adaptación a movil*/
+@media (max-width: 401px) {
+  header {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .idioma {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }  
+
+  .div1 .logo {
+    margin-bottom: 15px;
+    justify-content: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .div1 .menu {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    padding-top: 20px;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    padding:0px;
+    margin-top: 50px;
+  }
+
+  nav ul li {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-top: 300px;
+    margin-bottom: 150px;
+    text-align: center;
+    position: static;
+    padding: 0 5px;
+    margin-left: 65px;
+  }
+
+  .banner {
+    height: auto;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }  
+}
+
+/*Adaptación a tablets*/
+@media (max-width: 1025px) {
+  .idioma {
+   position: absolute;
+   right: 50px;
+ }  
+ 
+  h1{
+ left: 200px;
+ }
+
+ .banner {
+  height: auto;
+  padding: 0px;
+  text-align: center;
+}
+
+}
